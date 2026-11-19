@@ -1,0 +1,472 @@
+
+/* =========================
+   RESET DASAR
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #334155;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.main-header {
+    background-color: #1e293b;
+    color: white;
+    padding: 16px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* =========================
+   NAVBAR UTAMA
+========================= */
+
+.main-nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #38bdf8;
+}
+
+/* =========================
+   KONTEN UTAMA
+========================= */
+
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+/* =========================
+   SISTEM SINGLE PAGE
+========================= */
+
+.page {
+    display: none;
+    width: 100%;
+}
+
+.page.active {
+    display: block;
+}
+
+/* =========================
+   HALAMAN BERANDA
+========================= */
+
+#beranda {
+    max-width: 850px;
+    margin: 60px auto;
+}
+
+.home-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.home-card h2 {
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.home-card p {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   HALAMAN PROFIL
+========================= */
+
+#profil {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#profil.active {
+    display: flex;
+}
+
+/* CARD PROFIL */
+
+.profile-card {
+    background-color: #948181;
+    width: 100%;
+    max-width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: melayang 0.8s ease-out;
+}
+
+/* JUDUL PROFIL */
+
+.welcome-title {
+    font-size: 23px;
+    color: #334155;
+    margin-bottom: 16px;
+}
+
+/* NAVBAR PROFIL */
+
+.profile-nav {
+    margin-bottom: 20px;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.profile-nav a:hover {
+    text-decoration: underline;
+}
+
+/* GARIS PEMBATAS */
+
+.profile-card hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-bottom: 35px;
+}
+
+/* FOTO PROFIL */
+
+.avatar-box {
+    margin-bottom: 20px;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* NAMA DAN BIODATA */
+
+.name {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #334155;
+    line-height: 1.5;
+}
+
+.role,
+.bio {
+    text-align: center;
+    margin-top: 8px;
+    color: #334155;
+}
+
+/* SKILL */
+
+.skills {
+    text-align: center;
+}
+
+.badge-skill {
+    display: inline-block;
+    background-color: #e7f1ff;
+    color: #007bff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 8px 2px 0;
+}
+
+/* TOMBOL KONTAK */
+
+.btn-contact {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+/* =========================
+   HALAMAN PENDAFTARAN
+========================= */
+
+.form-section {
+    background-color: white;
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    font-size: 22px;
+    color: #0f172a;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.section-desc {
+    font-size: 14px;
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* FORM ROW */
+
+.form-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.form-col {
+    flex: 1;
+    min-width: 280px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+.group-label {
+    margin-bottom: 8px !important;
+}
+
+/* INPUT FORM */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+    background-color: white;
+}
+
+/* RADIO DAN CHECKBOX */
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 16px;
+}
+
+.form-group .inline-label {
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* TOMBOL FORM */
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-submit {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-reset {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+.btn-reset:hover {
+    background-color: #cbd5e1;
+}
+
+/* PESAN ERROR */
+
+.error-msg {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 600;
+    min-height: 16px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.main-footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 16px;
+    font-size: 13px;
+    margin-top: auto;
+}
+
+/* =========================
+   ANIMASI
+========================= */
+
+@keyframes melayang {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .main-nav a {
+        margin: 0 6px;
+    }
+
+    .main-content {
+        padding: 25px 15px;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .radio-group,
+    .checkbox-group,
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-card {
+        padding: 25px;
+    }
+
+    .name {
+        font-size: 17px;
+    }
+
+}

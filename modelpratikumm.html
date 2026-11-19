@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Bakti Nusantara 666</title>
+    <link rel="stylesheet" href="modelpratikumm.css">
+</head>
+
+<body>
+
+    <!-- HEADER DAN NAVBAR -->
+    <header class="main-header">
+        <div class="header-container">
+
+            <h1 class="brand-title">SMK Bakti Nusantara 666</h1>
+
+            <nav class="main-nav">
+                <a href="#" class="nav-link active" data-page="beranda">Beranda</a>
+                <a href="#" class="nav-link" data-page="profil">Profil</a>
+                <a href="#" class="nav-link" data-page="pendaftaran">Pendaftaran</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main class="main-content">
+
+        <!-- HALAMAN BERANDA -->
+        <section id="beranda" class="page active">
+
+            <div class="home-card">
+
+                <h2>Selamat Datang!</h2>
+
+                <p>Website SMK Bakti Nusantara 666</p>
+
+                <p>
+                    Silakan pilih menu navigasi untuk melihat
+                    profil atau mengisi formulir pendaftaran.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- HALAMAN PROFIL -->
+        <section id="profil" class="page">
+
+            <div class="profile-card">
+
+                <h2 class="welcome-title">welcome.To web ku</h2>
+
+                <nav class="profile-nav">
+                    <a href="#">about</a>
+                    <a href="#">project</a>
+
+                    <a href="https://saweria.co/bimalolll"
+                       target="_blank">Saweria</a>
+
+                    <a href="https://github.com/Bimaputra3008"
+                       target="_blank">Github</a>
+                </nav>
+
+                <hr>
+
+                <!-- FOTO PROFIL -->
+                <div class="avatar-box">
+                    <img class="foto"
+                         src="c:\Users\LENOVO\Downloads\bimax.png.jpeg"
+                         alt="Foto Profil">
+                </div>
+
+                <!-- BIODATA -->
+                <h2 class="name">
+                    My name is Mochamad Bima Putra Ramadhan
+                </h2>
+
+                <p class="role">Siswa Web Developer</p>
+
+                <p class="bio">
+                    Sedang belajar materi dasar CSS.
+                </p>
+
+                <!-- SKILL -->
+                <div class="skills">
+                    <span class="badge-skill">HTML5</span>
+                    <span class="badge-skill">CSS3</span>
+                    <span class="badge-skill">Database</span>
+                    <span class="badge-skill">Ngaduk semen</span>
+                </div>
+
+                <!-- TOMBOL KONTAK -->
+                <a href="https://wa.me/6282169607202"
+                   target="_blank"
+                   class="btn-contact">
+                    Hubungi Saya
+                </a>
+
+                <a href="https://www.instagram.com/189.chipmunk/"
+                   target="_blank"
+                   class="btn-contact">
+                    Instagram
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- HALAMAN PENDAFTARAN -->
+        <section id="pendaftaran" class="page">
+
+            <div class="form-section">
+
+                <h2 class="section-title">
+                    Form Pendaftaran Siswa Baru
+                </h2>
+
+                <p class="section-desc">
+                    Isi formulir di bawah ini dengan data
+                    yang benar dan lengkap.
+                </p>
+
+                <form action="proses.php"
+                      method="post"
+                      class="custom-form"
+                      id="formPendaftaran">
+
+                    <div class="form-row">
+
+                        <!-- KOLOM KIRI -->
+                        <div class="form-col">
+
+                            <div class="form-group">
+                                <label for="nama">Nama Lengkap:</label>
+
+                                <input type="text"
+                                       id="nama"
+                                       name="nama"
+                                       placeholder="Nama lengkap siswa"
+                                       required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       placeholder="nama@email.com"
+                                       required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+
+                                <input type="password"
+                                       id="password"
+                                       name="password"
+                                       placeholder="Minimal 8 karakter"
+                                       minlength="8"
+                                       required>
+
+                                <small class="error-msg"
+                                       id="errorPassword"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tgl">Tanggal Lahir:</label>
+
+                                <input type="date"
+                                       id="tgl"
+                                       name="tanggal_lahir"
+                                       required>
+                            </div>
+
+                        </div>
+
+
+                        <!-- KOLOM KANAN -->
+                        <div class="form-col">
+
+                            <div class="form-group">
+
+                                <label class="group-label">
+                                    Jenis Kelamin:
+                                </label>
+
+                                <div class="radio-group">
+
+                                    <label class="inline-label">
+                                        <input type="radio"
+                                               name="jk"
+                                               value="L"
+                                               required>
+                                        Laki-laki
+                                    </label>
+
+                                    <label class="inline-label">
+                                        <input type="radio"
+                                               name="jk"
+                                               value="P">
+                                        Perempuan
+                                    </label>
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="jurusan">
+                                    Pilihan Jurusan:
+                                </label>
+
+                                <select id="jurusan"
+                                        name="jurusan"
+                                        required>
+
+                                    <option value="">
+                                        -- Pilih Jurusan --
+                                    </option>
+
+                                    <option value="pplg">
+                                        PPLG (Pengembangan Perangkat Lunak & Gim)
+                                    </option>
+
+                                    <option value="tjkt">
+                                        TJKT (Teknik Jaringan Komputer dan Telekomunikasi)
+                                    </option>
+
+                                    <option value="dkv">
+                                        DKV (Desain Komunikasi Visual)
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="alamat">
+                                    Alamat Lengkap:
+                                </label>
+
+                                <textarea id="alamat"
+                                          name="alamat"
+                                          rows="4"
+                                          placeholder="Alamat rumah lengkap"
+                                          required></textarea>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="group-label">
+                                    Minat & Keahlian:
+                                </label>
+
+                                <div class="checkbox-group">
+
+                                    <label class="inline-label">
+                                        <input type="checkbox"
+                                               name="minat[]"
+                                               value="web">
+                                        Web Development
+                                    </label>
+
+                                    <label class="inline-label">
+                                        <input type="checkbox"
+                                               name="minat[]"
+                                               value="game">
+                                        Game Development
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TOMBOL -->
+                    <div class="button-group">
+
+                        <button type="submit"
+                                class="btn btn-submit">
+                            Daftar Sekarang
+                        </button>
+
+                        <button type="reset"
+                                class="btn btn-reset">
+                            Reset Form
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <p>
+            &copy; 2026 SMK Bakti Nusantara 666.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="modelpratikum.js"></script>
+
+</body>
+</html>
